@@ -1,6 +1,6 @@
-# Vim + Readline = \<THIS!!!\>
-
 <img align="right" src="./images/vimman.png">
+
+# Vim + Readline = \<THIS!!!\>
 
 I love [Vim](http://www.vim.org/).
 I love [Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html).
