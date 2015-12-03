@@ -1,7 +1,9 @@
 # Vim + Readline = \<THIS!!!\>
 
-I love [Vim]().
-I love [Readline]().
+<img align="right" src="./images/vimman.png">
+
+I love [Vim](http://www.vim.org/).
+I love [Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html).
 
 Why am I always exiting from insert mode? Because I don't know the [insert modes special keys](http://vimdoc.sourceforge.net/htmldoc/insert.html).
 
@@ -10,6 +12,7 @@ Why are those special keys so different from Readline?
 Some might say that I should be using Emacs; but I'm a Vim Man. I say, READLINE IN INSERT MODE!
 
 Together, lets make it happen!
+
 
 ## Call To Action
 
