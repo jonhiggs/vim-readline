@@ -3,12 +3,14 @@
 
 " kill-line (C-k)
 " Kill the text from point to the end of the line.
+imap <C-k> <C-O>d$
 
 " backward-kill-line (C-x Rubout)
 " Kill backward to the beginning of the line.
 
 " unix-line-discard (C-u)
 " Kill backward from the cursor to the beginning of the current line.
+imap <C-u> <C-O>d^
 
 " kill-whole-line ()
 " Kill all characters on the current line, no matter where point is. By
@@ -17,13 +19,16 @@
 " kill-word (M-d)
 " Kill from point to the end of the current word, or if between words, to the
 " end of the next word. Word boundaries are the same as forward-word.
+imap <M-d> <C-O>dE
 
 " backward-kill-word (M-DEL)
 " Kill the word behind point. Word boundaries are the same as backward-word.
+imap <M-BS> <C-O>b<C-O>dE
 
 " unix-word-rubout (C-w)
 " Kill the word behind point, using white space as a word boundary. The killed
 " text is saved on the kill-ring.
+imap <C-w> <C-O>B<C-O>df 
 
 " delete-horizontal-space ()
 " Delete all spaces and tabs around point. By default, this is unbound.
@@ -45,6 +50,7 @@
 
 " yank (C-y)
 " Yank the top of the kill ring into the buffer at point.
+imap <C-y> <C-O>u
 
 " yank-pop (M-y)
 " Rotate the kill-ring, and yank the new top. You can only do this if the

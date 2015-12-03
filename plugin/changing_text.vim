@@ -30,6 +30,7 @@
 " cursor, moving the cursor forward as well. If the insertion point is at the
 " end of the line, then this transposes the last two characters of the line.
 " Negative arguments have no effect.
+imap <C-t> <C-O>x<C-O>P
 
 " transpose-words (M-t)
 " Drag the word before point past the word after point, moving point past that
