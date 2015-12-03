@@ -1,4 +1,4 @@
-# Vim + Readline = <THIS!!!>
+# Vim + Readline = \<THIS!!!\>
 
 I love [Vim]().
 I love [Readline]().
