@@ -80,7 +80,7 @@ command! ReadlineUnixWordRubout call ReadlineUnixWordRubout()
 
 " yank (C-y)
 " Yank the top of the kill ring into the buffer at point.
-imap <C-y> <C-O>u
+"imap <C-y> <C-O>u
 
 " yank-pop (M-y)
 " Rotate the kill-ring, and yank the new top. You can only do this if the
