@@ -23,7 +23,14 @@ imap <M-d> <C-O>dE
 
 " backward-kill-word (M-DEL)
 " Kill the word behind point. Word boundaries are the same as backward-word.
-imap <M-BS> <C-O>b<C-O>dE
+function! ReadlineBackwardKillWord()
+  if col(".") == col("$")-1           " When we are at the end of the line
+    call feedkeys("\<Esc>dbxa")
+  else
+    call feedkeys("\<Esc>ldbi")
+  endif
+endfunction
+command! ReadlineBackwardKillWord call ReadlineBackwardKillWord()
 
 " unix-word-rubout (C-w)
 " Kill the word behind point, using white space as a word boundary. The killed
