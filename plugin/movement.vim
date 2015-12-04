@@ -32,18 +32,27 @@ endfunction
 command! ReadlineBackwardChar call ReadlineBackwardChar()
 
 "forward-word (M-f)
-"Move forward to the end of the next word. Words are composed of letters and digits.
+"Move forward to the end of the next word. Words are composed of letters and
+"digits.
 function! ReadlineForwardWord()
   call feedkeys("\<Esc>ea")
 endfunction
 command! ReadlineForwardWord call ReadlineForwardWord()
 
 "backward-word (M-b)
-"Move back to the start of the current or previous word. Words are composed of letters and digits.
-imap <M-b> <C-O>b
+"Move back to the start of the current or previous word. Words are composed of
+"letters and digits.
+function! ReadlineBackwardWord()
+  if getline(".")[col(".")-2] =~ '[^a-zA-Z0-9]'  " if we stopped at punctuation
+    call feedkeys("\<Left>")
+  endif
+  call feedkeys("\<C-O>b")
+endfunction
+command! ReadlineBackwardWord call ReadlineBackwardWord()
 
 "clear-screen (C-l)
-"Clear the screen and redraw the current line, leaving the current line at the top of the screen.
+"Clear the screen and redraw the current line, leaving the current line at the
+"top of the screen.
 
 "redraw-current-line ()
 "Refresh the current line. By default, this is unbound.
