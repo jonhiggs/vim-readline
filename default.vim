@@ -1,4 +1,6 @@
 """"""""""      <C-O>:ReadlineKillWholeLine<CR>
+imap <C-a>      <C-O>:ReadlineBeginningOfLine<CR>
+imap <C-e>      <C-O>:ReadlineEndOfLine<CR>
 imap <C-k>      <C-O>:ReadlineKillLine<CR>
 imap <C-u>      <C-O>:ReadlineUnixLineDiscard<CR>
 imap <C-w>      <C-O>:ReadlineUnixWordRubout<CR>

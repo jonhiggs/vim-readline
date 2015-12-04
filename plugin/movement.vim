@@ -3,11 +3,19 @@
 
 "beginning-of-line (C-a)
 "Move to the start of the current line.
-imap <C-a> <C-O>^
+function! ReadlineBeginningOfLine()
+  call feedkeys("\<C-O>^")
+endfunction
+command! ReadlineBeginningOfLine call ReadlineBeginningOfLine()
 
 "end-of-line (C-e)
 "Move to the end of the line.
 imap <C-e> <C-O>$
+
+function! ReadlineEndOfLine()
+  call feedkeys("\<C-O>$")
+endfunction
+command! ReadlineEndOfLine call ReadlineEndOfLine()
 
 "forward-char (C-f)
 "Move forward a character.
