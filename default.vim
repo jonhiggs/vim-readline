@@ -5,6 +5,7 @@ imap <C-d>      <C-O>:ReadlineDeleteChar<CR>
 imap <C-e>      <C-O>:ReadlineEndOfLine<CR>
 imap <C-f>      <C-O>:ReadlineForwardChar<CR>
 imap <C-k>      <C-O>:ReadlineKillLine<CR>
+imap <C-t>      <C-O>:ReadlineTransposeChars<CR>
 imap <C-u>      <C-O>:ReadlineUnixLineDiscard<CR>
 imap <C-w>      <C-O>:ReadlineUnixWordRubout<CR>
 imap <C-x><BS>  <C-O>:ReadlineBackwardKillLine<CR>

@@ -36,7 +36,13 @@ command! ReadlineDeleteChar call ReadlineDeleteChar()
 " cursor, moving the cursor forward as well. If the insertion point is at the
 " end of the line, then this transposes the last two characters of the line.
 " Negative arguments have no effect.
-imap <C-t> <C-O>x<C-O>P
+function! ReadlineTransposeChars()
+  if col(".") != col("$")-1           " When we are not at the end of the line
+    call feedkeys("\<Left>")
+  endif
+  call feedkeys("\<Esc>xPla")
+endfunction
+command! ReadlineTransposeChars call ReadlineTransposeChars()
 
 " transpose-words (M-t)
 " Drag the word before point past the word after point, moving point past that
