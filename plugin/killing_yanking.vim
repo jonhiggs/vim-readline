@@ -3,10 +3,14 @@
 
 " kill-line (C-k)
 " Kill the text from point to the end of the line.
-imap <C-k> <C-O>d$
+function! ReadlineKillLine()
+  call feedkeys("\<C-O>C")
+endfunction
+command! ReadlineKillLine call ReadlineKillLine()
 
 " backward-kill-line (C-x Rubout)
 " Kill backward to the beginning of the line.
+command! ReadlineBackwardKillLine call ReadlineUnixLineDiscard()
 
 " unix-line-discard (C-u)
 " Kill backward from the cursor to the beginning of the current line.
