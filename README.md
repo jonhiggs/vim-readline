@@ -21,7 +21,7 @@ Together, lets make it happen!
 
 1. Use whatever plugin manager you like (I like [Vundle](https://github.com/VundleVim/Vundle.vi://github.com/VundleVim/Vundle.vim)).
 
-2. Configure the maps you'd like to use. You can use the default readline from [default.vim](./default.vim).
+2. Configure the maps you'd like to use. You can use the default readline maps from [default.vim](./default.vim).
 
 
 
