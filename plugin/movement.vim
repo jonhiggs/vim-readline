@@ -33,7 +33,10 @@ command! ReadlineBackwardChar call ReadlineBackwardChar()
 
 "forward-word (M-f)
 "Move forward to the end of the next word. Words are composed of letters and digits.
-imap <M-f> <C-O>e
+function! ReadlineForwardWord()
+  call feedkeys("\<Esc>ea")
+endfunction
+command! ReadlineForwardWord call ReadlineForwardWord()
 
 "backward-word (M-b)
 "Move back to the start of the current or previous word. Words are composed of letters and digits.
