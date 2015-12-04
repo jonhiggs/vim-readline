@@ -14,3 +14,5 @@ imap <M-b>      <C-O>:ReadlineBackwardWord<CR>
 imap <M-d>      <C-O>:ReadlineKillWord<CR>
 imap <M-f>      <C-O>:ReadlineForwardWord<CR>
 imap <M-t>      <C-O>:ReadlineTransposeWords<CR>
+imap <M-u>      <C-O>:ReadlineUpcaseWord<CR>
+imap <M-l>      <C-O>:ReadlineDowncaseWord<CR>

@@ -56,10 +56,18 @@ command! ReadlineTransposeWords call ReadlineTransposeWords()
 " upcase-word (M-u)
 " Uppercase the current (or following) word. With a negative argument,
 " uppercase the previous word, but do not move the cursor.
+function! ReadlineUpcaseWord()
+  call feedkeys("\<Esc>\<C-v>eUea")
+endfunction
+command! ReadlineUpcaseWord call ReadlineUpcaseWord()
 
 " downcase-word (M-l)
 " Lowercase the current (or following) word. With a negative argument,
 " lowercase the previous word, but do not move the cursor.
+function! ReadlineDowncaseWord()
+  call feedkeys("\<Esc>\<C-v>euea")
+endfunction
+command! ReadlineDowncaseWord call ReadlineDowncaseWord()
 
 " capitalize-word (M-c)
 " Capitalize the current (or following) word. With a negative argument,
