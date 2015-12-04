@@ -10,7 +10,10 @@ imap <C-k> <C-O>d$
 
 " unix-line-discard (C-u)
 " Kill backward from the cursor to the beginning of the current line.
-imap <C-u> <C-O>d^
+function! ReadlineUnixLineDiscard()
+  call feedkeys("\<Esc>d^xi")
+endfunction
+command! ReadlineUnixLineDiscard call ReadlineUnixLineDiscard()
 
 " kill-whole-line ()
 " Kill all characters on the current line, no matter where point is. By
