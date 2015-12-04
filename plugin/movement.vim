@@ -19,9 +19,17 @@ command! ReadlineEndOfLine call ReadlineEndOfLine()
 
 "forward-char (C-f)
 "Move forward a character.
+function! ReadlineForwardChar()
+  call feedkeys("\<Right>")
+endfunction
+command! ReadlineForwardChar call ReadlineForwardChar()
 
 "backward-char (C-b)
 "Move back a character.
+function! ReadlineBackwardChar()
+  call feedkeys("\<Left>")
+endfunction
+command! ReadlineBackwardChar call ReadlineBackwardChar()
 
 "forward-word (M-f)
 "Move forward to the end of the next word. Words are composed of letters and digits.
