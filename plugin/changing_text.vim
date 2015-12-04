@@ -48,6 +48,10 @@ command! ReadlineTransposeChars call ReadlineTransposeChars()
 " Drag the word before point past the word after point, moving point past that
 " word as well. If the insertion point is at the end of the line, this
 " transposes the last two words on the line.
+function! ReadlineTransposeWords()
+  call feedkeys("\<Esc>b\"adE\"bxb\"bP\"aPEa")
+endfunction
+command! ReadlineTransposeWords call ReadlineTransposeWords()
 
 " upcase-word (M-u)
 " Uppercase the current (or following) word. With a negative argument,
