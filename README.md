@@ -41,3 +41,5 @@ I've scraped together all the commands that Readline supports and put together t
 ---
 
 If you are interested, here are the [Readline Man Pages](http://www.delorie.com/gnu/docs/readline/rlman_13.html).
+
+If you're a Readline feen like me, perhaps you'll find my [config](https://github.com/jonhiggs/dotfiles/blob/master/Karabiner/private.xm://github.com/jonhiggs/dotfiles/blob/master/Karabiner/private.xml) for [Karabiner](https://pqrs.org/osx/karabiner/) interesting.
