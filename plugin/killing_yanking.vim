@@ -22,12 +22,12 @@ command! ReadlineUnixLineDiscard call ReadlineUnixLineDiscard()
 " kill-word (M-d)
 " Kill from point to the end of the current word, or if between words, to the
 " end of the next word. Word boundaries are the same as forward-word.
-function! ReadlineKillWholeLine()
+function! ReadlineKillWord()
   if col(".") != col("$")-1           " When we are not at the end of the line
     call feedkeys("\<C-O>de")
   endif
 endfunction
-command! ReadlineKillWholeLine call ReadlineKillWholeLine()
+command! ReadlineKillWord call ReadlineKillWord()
 
 " backward-kill-word (M-DEL)
 " Kill the word behind point. Word boundaries are the same as backward-word.
