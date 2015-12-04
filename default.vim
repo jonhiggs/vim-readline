@@ -1,6 +1,7 @@
 """"""""""      <C-O>:ReadlineKillWholeLine<CR>
 imap <C-a>      <C-O>:ReadlineBeginningOfLine<CR>
 imap <C-b>      <C-O>:ReadlineBackwardChar<CR>
+imap <C-d>      <C-O>:ReadlineDeleteChar<CR>
 imap <C-e>      <C-O>:ReadlineEndOfLine<CR>
 imap <C-f>      <C-O>:ReadlineForwardChar<CR>
 imap <C-k>      <C-O>:ReadlineKillLine<CR>

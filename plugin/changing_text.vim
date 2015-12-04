@@ -5,6 +5,12 @@
 " Delete the character at point. If point is at the beginning of the line,
 " there are no characters in the line, and the last character typed was not
 " bound to delete-char, then return EOF.
+function! ReadlineDeleteChar()
+  if col(".") != col("$")-1           " When we are not at the end of the line
+    call feedkeys("\<C-O>x")
+  endif
+endfunction
+command! ReadlineDeleteChar call ReadlineDeleteChar()
 
 " backward-delete-char (Rubout)
 " Delete the character behind the cursor. A numeric argument means to kill the
