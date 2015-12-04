@@ -18,6 +18,9 @@ command! ReadlineUnixLineDiscard call ReadlineUnixLineDiscard()
 " kill-whole-line ()
 " Kill all characters on the current line, no matter where point is. By
 " default, this is unbound.
+function! ReadlineKillWholeLine()
+  call feedkeys("\<Esc>ddO")
+endfunction
 
 " kill-word (M-d)
 " Kill from point to the end of the current word, or if between words, to the
