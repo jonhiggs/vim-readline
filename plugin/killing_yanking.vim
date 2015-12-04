@@ -28,7 +28,15 @@ imap <M-BS> <C-O>b<C-O>dE
 " unix-word-rubout (C-w)
 " Kill the word behind point, using white space as a word boundary. The killed
 " text is saved on the kill-ring.
-imap <C-w> <C-O>B<C-O>df 
+
+function! ReadlineUnixWordRubout()
+  if col(".") == col("$")-1           " When we are at the end of the line
+    call feedkeys("\<C-O>dB\<C-O>x")
+  else
+    call feedkeys("\<C-O>dB")
+  endif
+endfunction
+command! ReadlineUnixWordRubout call ReadlineUnixWordRubout()
 
 " delete-horizontal-space ()
 " Delete all spaces and tabs around point. By default, this is unbound.
