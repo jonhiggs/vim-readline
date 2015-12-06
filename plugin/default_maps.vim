@@ -23,3 +23,6 @@ inoremap <M-r>      <C-O>:ReadlineRevertLine<CR>
 inoremap <M-t>      <C-O>:ReadlineTransposeWords<CR>
 inoremap <M-u>      <C-O>:ReadlineUpcaseWord<CR>
 inoremap <M-#>      <C-O>:ReadlineInsertComment<CR>
+
+cmap     <C-a>      <Home>
+cmap     <C-e>      <End>
