@@ -50,7 +50,6 @@ command! ReadlineBackwardKillWord call ReadlineBackwardKillWord()
 " unix-word-rubout (C-w)
 " Kill the word behind point, using white space as a word boundary. The killed
 " text is saved on the kill-ring.
-
 function! ReadlineUnixWordRubout()
   if col(".") == col("$")-1           " When we are at the end of the line
     call feedkeys("\<C-O>dB\<C-O>x")

@@ -15,6 +15,7 @@ command! ReadlineDeleteChar call ReadlineDeleteChar()
 " backward-delete-char (Rubout)
 " Delete the character behind the cursor. A numeric argument means to kill the
 " characters instead of deleting them.
+" <DEFAULT VIM BEHAVIOUR>
 
 " forward-backward-delete-char ()
 " Delete the character under the cursor, unless the cursor is at the end of
@@ -24,12 +25,14 @@ command! ReadlineDeleteChar call ReadlineDeleteChar()
 " quoted-insert (C-q or C-v)
 " Add the next character typed to the line verbatim. This is how to insert key
 " sequences like C-q, for example.
+" <DEFAULT VIM BEHAVIOUR>
 
 " tab-insert (M-TAB)
 " Insert a tab character.
 
 " self-insert (a, b, A, 1, !, ...)
 " Insert yourself.
+" <DEFAULT VIM BEHAVIOUR>
 
 " transpose-chars (C-t)
 " Drag the character before the cursor forward over the character at the
@@ -72,7 +75,6 @@ command! ReadlineDowncaseWord call ReadlineDowncaseWord()
 " capitalize-word (M-c)
 " Capitalize the current (or following) word. With a negative argument,
 " capitalize the previous word, but do not move the cursor.
-
 function! ReadlineCapitalizeWord()
   call feedkeys("\<Esc>l~ea")
 endfunction
