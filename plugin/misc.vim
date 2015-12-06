@@ -51,6 +51,12 @@ command! ReadlineCharacterSearch call ReadlineCharacterSearch()
 " character-search-backward (M-C-])
 " A character is read and point is moved to the previous occurrence of that
 " character. A negative count searches for subsequent occurrences.
+function! ReadlineCharacterSearchBackward()
+  let c = getchar()
+  let v = nr2char(c)
+  call feedkeys("\<Esc>F".v."i")
+endfunction
+command! ReadlineCharacterSearchBackward call ReadlineCharacterSearchBackward()
 
 " insert-comment (M-#)
 " Without a numeric argument, the value of the comment-begin variable is

@@ -1,5 +1,7 @@
 " VIM MAP             " VIM-READLINE FUNCTION
 """"""""""      <C-O>:ReadlineKillWholeLine<CR>
+imap <C-M-]>    <C-O>:ReadlineCharacterSearchBackward<CR>
+imap <C-M-j>    <C-O>:ReadlineViEditingMode<CR>
 imap <C-]>      <C-O>:ReadlineCharacterSearch<CR>
 imap <C-a>      <C-O>:ReadlineBeginningOfLine<CR>
 imap <C-b>      <C-O>:ReadlineBackwardChar<CR>
@@ -12,7 +14,6 @@ imap <C-u>      <C-O>:ReadlineUnixLineDiscard<CR>
 imap <C-w>      <C-O>:ReadlineUnixWordRubout<CR>
 imap <C-x><BS>  <C-O>:ReadlineBackwardKillLine<CR>
 imap <M-BS>     <C-O>:ReadlineBackwardKillWord<CR>
-imap <M-C-j>    <C-O>:ReadlineViEditingMode<CR>
 imap <M-b>      <C-O>:ReadlineBackwardWord<CR>
 imap <M-c>      <C-O>:ReadlineCapitalizeWord<CR>
 imap <M-d>      <C-O>:ReadlineKillWord<CR>
