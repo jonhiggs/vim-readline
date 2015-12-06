@@ -1,3 +1,4 @@
+" VIM MAP             " VIM-READLINE FUNCTION
 """"""""""      <C-O>:ReadlineKillWholeLine<CR>
 imap <C-a>      <C-O>:ReadlineBeginningOfLine<CR>
 imap <C-b>      <C-O>:ReadlineBackwardChar<CR>
