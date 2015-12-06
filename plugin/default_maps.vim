@@ -22,3 +22,4 @@ imap <M-l>      <C-O>:ReadlineDowncaseWord<CR>
 imap <M-r>      <C-O>:ReadlineRevertLine<CR>
 imap <M-t>      <C-O>:ReadlineTransposeWords<CR>
 imap <M-u>      <C-O>:ReadlineUpcaseWord<CR>
+imap <M-#>      <C-O>:ReadlineInsertComment<CR>

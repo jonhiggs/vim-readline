@@ -47,7 +47,6 @@ function! ReadlineCharacterSearch()
 endfunction
 command! ReadlineCharacterSearch call ReadlineCharacterSearch()
 
-
 " character-search-backward (M-C-])
 " A character is read and point is moved to the previous occurrence of that
 " character. A negative count searches for subsequent occurrences.
@@ -66,6 +65,25 @@ command! ReadlineCharacterSearchBackward call ReadlineCharacterSearchBackward()
 " otherwise the characters in comment-begin are deleted from the beginning of
 " the line. In either case, the line is accepted as if a newline had been
 " typed.
+function! ReadlineInsertComment()
+  if &filetype == "c"
+    let comment='//'
+  elseif &filetype == "ruby"
+    let comment='#'
+  elseif &filetype == "sh"
+    let comment='#'
+  elseif &filetype == "dosini"
+    let comment=';'
+  elseif &filetype == "python"
+    let comment='#'
+  elseif &filetype == "vim"
+    let comment='"'
+  endif
+
+  p = getcol()
+  call feedkeys("\<Esc>ma0i".comment."\<Esc>`ai")
+endfunction
+command! ReadlineInsertComment call ReadlineInsertComment()
 
 " dump-functions ()
 " Print all of the functions and their key bindings to the Readline output
