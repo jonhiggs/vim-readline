@@ -12,6 +12,7 @@ imap <C-w>      <C-O>:ReadlineUnixWordRubout<CR>
 imap <C-x><BS>  <C-O>:ReadlineBackwardKillLine<CR>
 imap <M-BS>     <C-O>:ReadlineBackwardKillWord<CR>
 imap <M-b>      <C-O>:ReadlineBackwardWord<CR>
+imap <M-c>      <C-O>:ReadlineCapitalizeWord<CR>
 imap <M-d>      <C-O>:ReadlineKillWord<CR>
 imap <M-f>      <C-O>:ReadlineForwardWord<CR>
 imap <M-l>      <C-O>:ReadlineDowncaseWord<CR>

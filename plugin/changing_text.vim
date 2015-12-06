@@ -73,4 +73,8 @@ command! ReadlineDowncaseWord call ReadlineDowncaseWord()
 " Capitalize the current (or following) word. With a negative argument,
 " capitalize the previous word, but do not move the cursor.
 
+function! ReadlineCapitalizeWord()
+  call feedkeys("\<Esc>l~ea")
+endfunction
+command! ReadlineCapitalizeWord call ReadlineCapitalizeWord()
 
