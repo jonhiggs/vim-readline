@@ -29,7 +29,7 @@ On start-up, the [default key bindings](./plugin/default_maps.vim) will be loade
 
 You may of course extend or modify the defaults within your own personal configuration. Perhaps you'll append it to `~/.vimrc` or `~/.vim/plugins/vim-readline.vim`. How you go about it is up to you.
 
-A complete list of functionality can be seen within `./plugin/default_maps.vim`.
+A complete list of functionality can be seen within [./plugin/default_maps.vim](./plugin/default_maps.vim).
 
 
 ## Development
