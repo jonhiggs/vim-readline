@@ -13,7 +13,7 @@ Some might say that I should be using Emacs; but I'm a Vim Man. I say, READLINE 
 
 Together, lets make it happen!
 
-**UPDATE 06/12/15:** Automatically load the default maps and improved documentation.
+**UPDATE 06/12/15:** Automatically load the default maps, improved documentation and more functions.
 
 **UPDATE 04/12/15:** A lot of the movement, killing, yanking and changing is done. This should be complete enough for most people but it can still be better.
 
