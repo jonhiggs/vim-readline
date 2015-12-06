@@ -84,5 +84,3 @@ command! ReadlineUnixWordRubout call ReadlineUnixWordRubout()
 " yank-pop (M-y)
 " Rotate the kill-ring, and yank the new top. You can only do this if the
 " prior command is yank or yank-pop.
-
-
