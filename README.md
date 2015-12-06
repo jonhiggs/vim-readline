@@ -25,7 +25,7 @@ Install with your favourite plugin manager (I like [Vundle](https://github.com/V
 
 ## Usage
 
-On start-up, the [default key bindings](./plugin/default_maps.vim) will be loaded. I endeavour to keep these defaults sane and avoid clashing with Vim's native key bindings.
+On start-up, the [default key bindings](./plugin/default_maps.vim) will be loaded. I will endeavour to keep these defaults sane and avoid clashing with Vim's native key bindings.
 
 You may of course extend or modify the defaults within your own personal configuration. Perhaps you'll append it to `~/.vimrc` or `~/.vim/plugins/vim-readline.vim`. How you go about it is up to you.
 
