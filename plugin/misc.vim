@@ -23,6 +23,7 @@
 " revert-line (M-r)
 " Undo all changes made to this line. This is like executing the undo command
 " enough times to get back to the beginning.
+command! ReadlineRevertLine call ReadlineUnixLineDiscard()
 
 " tilde-expand (M-~)
 " Perform tilde expansion on the current word.
