@@ -53,7 +53,9 @@ command! ReadlineBackwardWord call ReadlineBackwardWord()
 "clear-screen (C-l)
 "Clear the screen and redraw the current line, leaving the current line at the
 "top of the screen.
+"<NOT NEEDED>
 
 "redraw-current-line ()
 "Refresh the current line. By default, this is unbound.
 "<Paste>
+"<NOT NEEDED>
