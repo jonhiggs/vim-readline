@@ -25,4 +25,6 @@ inoremap <M-u>      <C-O>:ReadlineUpcaseWord<CR>
 inoremap <M-#>      <C-O>:ReadlineInsertComment<CR>
 
 cmap     <C-a>      <Home>
+cmap     <C-b>      <Left>
 cmap     <C-e>      <End>
+cmap     <C-f>      <Right>
