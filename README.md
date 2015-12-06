@@ -36,10 +36,10 @@ A complete list of functionality can be seen within `./plugin/default_maps.vim`.
 
 The functions are spread across the files in `./plugins` with each file corresponding to a chapter of the [Readline manual](http://www.delorie.com/gnu/docs/readline/rlman_13.html).
 
-- [Changing Text](./plugin/changing_text.vim)
-- [Killing & Yanking](./plugin/killing_yanking.vim)
-- [Miscellaneous](./plugin/misc.vim)
 - [Movement](./plugin/movement.vim)
+- [Killing & Yanking](./plugin/killing_yanking.vim)
+- [Changing Text](./plugin/changing_text.vim)
+- [Miscellaneous](./plugin/misc.vim)
 
 Not all of the functions have been written yet, but the intention is to make Vim functions with 100% identical behaviour as each of the Readline functions. The user may then use the default bindings offered, or customise the bindings to their own liking.
 
