@@ -1,3 +1,6 @@
+" Vim's default <C-n> and <C-p> work fine as a replacement for this. If you
+" have a strong argument to the contrary, raise an issue.
+
 " LETTING READLINE TYPE FOR YOU
 " http://www.delorie.com/gnu/docs/readline/rlman_19.html
 
