@@ -11,6 +11,7 @@ imap <C-u>      <C-O>:ReadlineUnixLineDiscard<CR>
 imap <C-w>      <C-O>:ReadlineUnixWordRubout<CR>
 imap <C-x><BS>  <C-O>:ReadlineBackwardKillLine<CR>
 imap <M-BS>     <C-O>:ReadlineBackwardKillWord<CR>
+imap <M-C-j>    <C-O>:ReadlineViEditingMode<CR>
 imap <M-b>      <C-O>:ReadlineBackwardWord<CR>
 imap <M-c>      <C-O>:ReadlineCapitalizeWord<CR>
 imap <M-d>      <C-O>:ReadlineKillWord<CR>

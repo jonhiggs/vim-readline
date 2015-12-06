@@ -76,3 +76,7 @@ command! ReadlineRevertLine call ReadlineUnixLineDiscard()
 
 " vi-editing-mode (M-C-j)
 " When in emacs editing mode, this causes a switch to vi editing mode.
+function! ReadlineViEditingMode()
+  call feedkeys("\<Esc>")
+endfunction
+command! ReadlineViEditingMode call ReadlineViEditingMode()
