@@ -38,10 +38,8 @@ The functions are spread across the files in `./plugins` with each file correspo
 
 - [Changing Text](./plugin/changing_text.vim)
 - [Killing & Yanking](./plugin/killing_yanking.vim)
-- [Macros](./plugin/macros.vim)
 - [Miscellaneous](./plugin/misc.vim)
 - [Movement](./plugin/movement.vim)
-- [Typing For You](./plugin/type_for_you.vim)
 
 Not all of the functions have been written yet, but the intention is to make Vim functions with 100% identical behaviour as each of the Readline functions. The user may then use the default bindings offered, or customise the bindings to their own liking.
 
