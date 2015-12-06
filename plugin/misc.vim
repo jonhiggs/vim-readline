@@ -40,6 +40,13 @@ command! ReadlineRevertLine call ReadlineUnixLineDiscard()
 " character-search (C-])
 " A character is read and point is moved to the next occurrence of that
 " character. A negative count searches for previous occurrences.
+function! ReadlineCharacterSearch()
+  let c = getchar()
+  let v = nr2char(c)
+  call feedkeys("\<Esc>lf".v."i")
+endfunction
+command! ReadlineCharacterSearch call ReadlineCharacterSearch()
+
 
 " character-search-backward (M-C-])
 " A character is read and point is moved to the previous occurrence of that
