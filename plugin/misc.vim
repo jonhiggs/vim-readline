@@ -4,6 +4,7 @@
 " re-read-init-file (C-x C-r)
 " Read in the contents of the inputrc file, and incorporate any bindings or
 " variable assignments found there.
+" <NOT NEEDED>
 
 " abort (C-g)
 " Abort the current editing command and ring the terminal's bell (subject to
@@ -58,21 +59,25 @@ command! ReadlineRevertLine call ReadlineUnixLineDiscard()
 " stream. If a numeric argument is supplied, the output is formatted in such a
 " way that it can be made part of an inputrc file. This command is unbound by
 " default.
+" <NOT NEEDED>
 
 " dump-variables ()
 " Print all of the settable variables and their values to the Readline output
 " stream. If a numeric argument is supplied, the output is formatted in such a
 " way that it can be made part of an inputrc file. This command is unbound by
 " default.
+" <NOT NEEDED>
 
 " dump-macros ()
 " Print all of the Readline key sequences bound to macros and the strings they
 " output. If a numeric argument is supplied, the output is formatted in such a
 " way that it can be made part of an inputrc file. This command is unbound by
 " default.
+" <NOT NEEDED>
 
 " emacs-editing-mode (C-e)
 " When in vi command mode, this causes a switch to emacs editing mode.
+" <DEFAULT VIM BEHAVOUR (with vim-readline)>
 
 " vi-editing-mode (M-C-j)
 " When in emacs editing mode, this causes a switch to vi editing mode.
