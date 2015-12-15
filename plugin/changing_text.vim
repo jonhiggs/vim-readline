@@ -6,7 +6,9 @@
 " there are no characters in the line, and the last character typed was not
 " bound to delete-char, then return EOF.
 function! ReadlineDeleteChar()
-  if col(".") != col("$")-1           " When we are not at the end of the line
+  if col(".") == col("$")-1
+    call feedkeys("\<Esc>lr i")
+  else
     call feedkeys("\<C-O>x")
   endif
 endfunction
