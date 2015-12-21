@@ -42,10 +42,10 @@ command! ReadlineDeleteChar call ReadlineDeleteChar()
 " end of the line, then this transposes the last two characters of the line.
 " Negative arguments have no effect.
 function! ReadlineTransposeChars()
-  if col(".") != col("$")-1           " When we are not at the end of the line
+  if col(".") == col("$")-1           " When we are at the end of the line
     call feedkeys("\<Left>")
   endif
-  call feedkeys("\<Esc>xPla")
+  call feedkeys("\<Esc>xpa")
 endfunction
 command! ReadlineTransposeChars call ReadlineTransposeChars()
 
