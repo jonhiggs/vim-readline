@@ -39,11 +39,13 @@ command! ReadlineKillWord call ReadlineKillWord()
 " backward-kill-word (M-DEL)
 " Kill the word behind point. Word boundaries are the same as backward-word.
 function! ReadlineBackwardKillWord()
+  set iskeyword+=_
   if col(".") == col("$")-1           " When we are at the end of the line
     call feedkeys("\<Esc>dbxa")
   else
     call feedkeys("\<Esc>ldbi")
   endif
+  set iskeyword-=_
 endfunction
 command! ReadlineBackwardKillWord call ReadlineBackwardKillWord()
 
