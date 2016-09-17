@@ -39,13 +39,23 @@ command! ReadlineKillWord call ReadlineKillWord()
 " backward-kill-word (M-DEL)
 " Kill the word behind point. Word boundaries are the same as backward-word.
 function! ReadlineBackwardKillWord()
-  set iskeyword+=_
+  if &iskeyword =~ '_'
+    let remove_keyword=0
+  else
+    let remove_keyword=1
+    set iskeyword+=_
+  endif
+
   if col(".") == col("$")-1           " When we are at the end of the line
     call feedkeys("\<Esc>dbxa")
   else
     call feedkeys("\<Esc>ldbi")
   endif
-  set iskeyword-=_
+
+  if remove_keyword
+    set iskeyword-=_
+    unlet remove_keyword
+  endif
 endfunction
 command! ReadlineBackwardKillWord call ReadlineBackwardKillWord()
 
