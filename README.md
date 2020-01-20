@@ -1,26 +1,15 @@
-<img align="right" src="./images/vimman.png">
-
-# Vim + Readline = \<THIS!!!\>
-
-I love [Vim](http://www.vim.org/).
-I love [Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html).
+# Vim & Readline
 
 Why am I always exiting from insert mode? Because I don't know the [insert modes special keys](http://vimdoc.sourceforge.net/htmldoc/insert.html).
 
-Why are those special keys so different from Readline?
+Why are those special keys so different from Readline? I don't know.
 
-Some might say that I should be using Emacs; but I'm a Vim Man. I say, READLINE IN INSERT MODE!
-
-Together, lets make it happen!
-
-**UPDATE 06/12/15:** Automatically load the default maps, improved documentation and more functions.
-
-**UPDATE 04/12/15:** A lot of the movement, killing, yanking and changing is done. This should be complete enough for most people but it can still be better.
+Some might say that I should be using Emacs, or Spacemacs or something. But, nah. I like Vim.
 
 
 ## Installation
 
-Install with your favourite plugin manager (I like [Vundle](https://github.com/VundleVim/Vundle.vim)).
+Install with your favourite plugin manager (I use [Vundle](https://github.com/VundleVim/Vundle.vim)).
 
 
 ## Usage
@@ -48,8 +37,3 @@ The Vim functions are namespaced as `Readline<Readline function to CamelCase>` a
 For example for the Readline function of `end-of-line`, it can be ran with `:ReadlineEndOfLine` and bound with `imap <C-e> <C-O>:ReadlineEndOfLine<CR>`.
 
 Described is a universal pattern for all functionality, regardless of how trivial the problem. The example of `end-of-line` could have been simply solved with `imap <C-e> <C-O>$` but being consistent is beneficial to the user. If they understand one function, they understand them all. There are no exceptions and the burden of complexity is shifted from the user to the developer where it belongs.
-
----
-
-
-If you're a Readline feen like me, perhaps you'll find my [config](https://github.com/jonhiggs/dotfiles/blob/master/Karabiner/private.xm://github.com/jonhiggs/dotfiles/blob/master/Karabiner/private.xml) for [Karabiner](https://pqrs.org/osx/karabiner/) interesting.
