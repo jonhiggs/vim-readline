@@ -15,7 +15,11 @@ command! ReadlineBackwardKillLine call ReadlineUnixLineDiscard()
 " unix-line-discard (C-u)
 " Kill backward from the cursor to the beginning of the current line.
 function! ReadlineUnixLineDiscard()
-  call feedkeys("\<Esc>d$a")
+  if col(".") == col("$")-1           " When we are at the end of the line
+    call feedkeys("\<Esc>^d$")
+  else
+    call feedkeys("\<Esc>d0xi")
+  endif
 endfunction
 command! ReadlineUnixLineDiscard call ReadlineUnixLineDiscard()
 
