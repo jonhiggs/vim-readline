@@ -4,7 +4,7 @@
 "beginning-of-line (C-a)
 "Move to the start of the current line.
 function! ReadlineBeginningOfLine()
-  call feedkeys("\<C-O>^")
+  call feedkeys("\<C-O>0")
 endfunction
 command! ReadlineBeginningOfLine call ReadlineBeginningOfLine()
 
